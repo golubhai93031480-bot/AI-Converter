@@ -3,73 +3,103 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard - AI Converter</title>
+<title>AI Converter Dashboard</title>
+
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
 background:#0f172a;
 color:white;
 }
+
 header{
 background:#111827;
 padding:20px;
 text-align:center;
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 color:#38bdf8;
 }
+
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
-padding:20px;
+padding:25px;
 }
+
 .card{
 background:#1e293b;
-padding:25px;
+padding:30px;
 border-radius:15px;
 text-align:center;
+transition:.3s;
 }
+
+.card:hover{
+transform:translateY(-5px);
+}
+
 .card a{
-color:white;
 text-decoration:none;
-font-size:18px;
+color:white;
+font-size:20px;
 font-weight:bold;
+display:block;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#94a3b8;
 }
 </style>
+
 </head>
+
 <body>
 
-<header>🤖 AI Converter Dashboard</header>
+<header>
+🤖 AI Converter Dashboard
+</header>
 
 <div class="grid">
 
 <div class="card">
-<a href="#">💬 AI Chat</a>
+<a href="chat.html">💬 AI Chat</a>
 </div>
 
 <div class="card">
-<a href="#">🖼️ AI Image</a>
+<a href="image.html">🖼️ AI Image</a>
 </div>
 
 <div class="card">
-<a href="#">🎥 AI Video</a>
+<a href="video.html">🎥 AI Video</a>
 </div>
 
 <div class="card">
-<a href="#">🎤 AI Voice</a>
+<a href="voice.html">🎤 AI Voice</a>
 </div>
 
 <div class="card">
-<a href="#">👤 Profile</a>
+<a href="profile.html">👤 Profile</a>
 </div>
 
 <div class="card">
-<a href="#">⚙️ Settings</a>
+<a href="settings.html">⚙️ Settings</a>
 </div>
 
 </div>
+
+<footer>
+© 2026 AI Converter | Developed by Mr_Golu_vlogs
+</footer>
 
 </body>
-</html>
+</html>111827
