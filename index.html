@@ -4,34 +4,127 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Converter</title>
+
 <style>
-body{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
 background:#0f172a;
 color:white;
-text-align:center;
-padding:40px;
 }
-h1{
+
+header{
+padding:20px;
+text-align:center;
+background:#111827;
+font-size:30px;
+font-weight:bold;
 color:#38bdf8;
 }
-button{
-padding:12px 24px;
+
+.hero{
+padding:40px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
 font-size:18px;
+color:#ccc;
+margin-bottom:30px;
+}
+
+.btn{
 background:#38bdf8;
 color:white;
+padding:15px 35px;
 border:none;
-border-radius:8px;
+border-radius:10px;
+font-size:18px;
 cursor:pointer;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card h2{
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+color:#aaa;
 }
 </style>
 </head>
+
 <body>
 
-<h1>🤖 AI Converter</h1>
-<p>Welcome to AI Converter</p>
+<header>
+🤖 AI Converter
+</header>
 
-<button onclick="alert('Coming Soon!')">Start</button>
+<section class="hero">
+<h1>One AI Platform</h1>
+<p>AI Chat • Text to Image • Text to Video • AI Voice</p>
+
+<button class="btn">Get Started</button>
+</section>
+
+<section class="features">
+
+<div class="card">
+<h2>💬 AI Chat</h2>
+<p>Talk with AI instantly.</p>
+</div>
+
+<div class="card">
+<h2>🖼 Text to Image</h2>
+<p>Create amazing AI images.</p>
+</div>
+
+<div class="card">
+<h2>🎥 Text to Video</h2>
+<p>Generate videos from text.</p>
+</div>
+
+<div class="card">
+<h2>🎤 AI Voice</h2>
+<p>Create realistic AI voices.</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 AI Converter | Developed by Mr_Golu_vlogs
+</footer>
 
 </body>
-  </html>
+</html>
