@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chat</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+display:flex;
+flex-direction:column;
+height:100vh;
+}
+header{
+background:#111827;
+padding:18px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+color:#38bdf8;
+}
+#chat{
+flex:1;
+padding:20px;
+overflow:auto;
+}
+.message{
+background:#1e293b;
+padding:12px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.bottom{
+display:flex;
+padding:10px;
+background:#111827;
+}
+input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+}
+button{
+margin-left:10px;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:white;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>🤖 AI Chat</header>
+
+<div id="chat">
+<div class="message">👋 Welcome to AI Chat!</div>
+</div>
+
+<div class="bottom">
+<input type="text" placeholder="Type your message...">
+<button>Send</button>
+</div>
+
+</body>
+</html>
